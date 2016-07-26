@@ -18,31 +18,33 @@ bpath = arg.basepath
 # confidence = arg.confidence
 
 def paths_to_files(combo, bpath):
-	# all you need is combo bc that determines path
-	path = os.path.join(bpath, '*/{0}/post/confidence_levels.txt'.format(combo))
-	print "Searching for %s" % path
-	paths = glob.glob(path)
-	print "Found %d" % len(paths)
-	return paths
+    # all you need is combo bc that determines path
+    path = os.path.join(bpath, '*/{0}/post/confidence_levels.txt'.format(combo))
+    print "Searching for %s" % path
+    paths = glob.glob(path)
+    print "Found %d" % len(paths)
+    return paths
 
 def split_up_lines(textfile):
-	with open(textfile,'r') as conf:
-		splitted = map(str.split, conf.readlines())
-	return splitted
+    with open(textfile,'r') as conf:
+        splitted = map(str.split, conf.readlines())
+    return splitted
 
 def extracting_data(textfile, param1, combo):
-	confreg = [float(item[2]) for item in split_up_lines(textfile) \
+    confreg = [float(item[2]) for item in split_up_lines(textfile) \
              if item[0] == param1]
-	if len(confreg) != 1:
-		return float("nan")
-	return confreg[0]
+    if len(confreg) != 1:
+        return float("nan")
+    else:
+        raise ValueError("Parameter %s not found in %s" % (param1, textfile))
+    return confreg[0]
 
 def collect_all_conflevels(param1, combo, bpath):
-	paths = paths_to_files(combo, bpath)
-	print [extracting_data(path, param1, combo) for path in paths]
-	data = np.asarray([extracting_data(path, param1, combo) for path in paths])
-	data.sort()
-	return data
+    paths = paths_to_files(combo, bpath)
+    print [extracting_data(path, param1, combo) for path in paths]
+    data = np.asarray([extracting_data(path, param1, combo) for path in paths])
+    data.sort()
+    return data
 
 #plotting the cdfs
 data_none = collect_all_conflevels(param1,'none', bpath)
