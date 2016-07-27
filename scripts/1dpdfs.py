@@ -41,6 +41,10 @@ RANGES = {
     "tilt2": (0, np.pi),
     "a1": (0, 1),
     "a2": (0, 1),
+    "theta_jn": (0, np.pi),
+    "distance": (1, 1000),
+    "ra": (0, 2*np.pi),
+    "dec": (-np.pi/2, np.pi/2)
 }
 
 GET_PARAM = {
@@ -49,7 +53,11 @@ GET_PARAM = {
     "tilt1": spin_tilt1,
     "tilt2": spin_tilt2,
     "a1": spin_mag1,
-    "a2": spin_mag2
+    "a2": spin_mag2,
+    "theta_jn": lambda r: r.inclination, # FIXME: NOT RIGHT
+    "distance": lambda r: r.distance,
+    "ra": lambda r: r.longitude,
+    "dec": lambda r: r.latitude
 }
 
 
@@ -91,7 +99,7 @@ def collect_all_conflevels(param1, combo, bpath):
 def conf_intrv(hist, bins):
     dx = bins[1] - bins[0]
     srt = hist.argsort()
-    idx = np.searchsorted(hist[srt].cumsum() * dx, 0.9)
+    idx = np.searchsorted(hist[srt].cumsum() * dx, 0.1)
     intr = bins[srt[idx:]]
     # FIXME: This is actually off by a bin width
     return (intr.min(), intr.max())
@@ -101,7 +109,7 @@ def conf_intrv2(hist, bins):
     dx = bins[1] - bins[0]
     srt = hist.argsort()
     bins = map(segment, list(zip(bins[:-1], bins[1:])))
-    idx = np.searchsorted(hist[srt].cumsum() * dx, 0.9)
+    idx = np.searchsorted(hist[srt].cumsum() * dx, 0.1)
     intrv = segmentlist()
     for bidx in srt[idx:]:
         intrv.append(bins[bidx])
@@ -192,9 +200,7 @@ for (run, combo), samples in data_none.iteritems():
         print "Actual confidence interval disjoint for %s, %s" % (run, combo)
 
     if sim_data:
-        #q = sim_data[int(run)].mass2 / sim_data[int(run)].mass1
         inj_val = GET_PARAM[param1](sim_data[int(run)])
-        #plt.axvline(q, color='m')
         plt.axvline(inj_val, color='c')
 
     # We could do SNR or something here...
