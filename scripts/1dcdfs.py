@@ -67,6 +67,9 @@ plt.plot(data_none,y_axis,label='none',color='k')
 # https://en.wikipedia.org/wiki/Dvoretzky%E2%80%93Kiefer%E2%80%93Wolfowitz_inequality
 alpha = 0.95
 error_width = math.sqrt(1./2/len(data_none) * math.log(2/alpha))
+# FIXME: Assumes symmetric errors -- do we need to divide by two because its
+# a bound on either side?
+#error_width /= 2
 plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3)
 
 data_skyloc = collect_all_conflevels(param1,'skyloc', bpath)
