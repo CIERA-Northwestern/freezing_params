@@ -16,8 +16,12 @@ import scipy.stats
 parser = argparse.ArgumentParser(description='Freezing param analysis: histogram and cdf for specified parameter combos at 67,90,95 or 99%/ confidence')
 parser.add_argument("-p", '--param1', type=str, help='first parameter of interest')
 parser.add_argument("-b", '--basepath', type=str, help='base path to search for results')
+parser.add_argument("-e", '--errors', type=str, default='bounded', help='Plot these types of error bars. Valid choices are: none, bounded, poisson, binomial. Default is \'bounded\'')
 # parser.add_argument('confidence', type=int, nargs='?', default=90, help='confidence region(67,90,95,99)')
 arg = parser.parse_args()
+if arg.errors not in ('none', 'bounded', 'poisson', 'binomial'):
+    raise ArgumentError("Invalid error bound selection.")
+
 param1 = arg.param1
 bpath = arg.basepath
 # confidence = arg.confidence
@@ -49,7 +53,7 @@ def extracting_data(textfile, param1, combo, error=False, verbose=False):
 
 def collect_all_conflevels(param1, combo, bpath):
     paths = paths_to_files(combo, bpath)
-    data = np.asarray([extracting_data(path, param1, combo) for path in paths])
+    data = np.asarray([0] + [extracting_data(path, param1, combo) for path in paths])
     data.sort()
     return data
 
@@ -58,19 +62,40 @@ print "-------- Plotting CDFs for param %s" % param1
 #plotting the cdfs
 data_none = collect_all_conflevels(param1,'none', bpath)
 y_axis = np.linspace(0,len(data_none)/float(len(data_none)),num=len(data_none))
+#plt.plot(data_none,y_axis,label='none',color='k')
 plt.plot(data_none,y_axis,label='none',color='k')
 
-# "Error bars" on the ECDF vs the "true" CDF
-# See:
-# https://stats.stackexchange.com/questions/15891/what-is-the-proper-way-to-estimate-the-cdf-for-a-distribution-from-samples-taken
-# and
-# https://en.wikipedia.org/wiki/Dvoretzky%E2%80%93Kiefer%E2%80%93Wolfowitz_inequality
-alpha = 0.95
-error_width = math.sqrt(1./2/len(data_none) * math.log(2/alpha))
-# FIXME: Assumes symmetric errors -- do we need to divide by two because its
-# a bound on either side?
-#error_width /= 2
-plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3)
+if arg.errors == "bounded":
+    # "Error bars" on the ECDF vs the "true" CDF
+    # See:
+    # https://stats.stackexchange.com/questions/15891/what-is-the-proper-way-to-estimate-the-cdf-for-a-distribution-from-samples-taken
+    # and
+    # https://en.wikipedia.org/wiki/Dvoretzky%E2%80%93Kiefer%E2%80%93Wolfowitz_inequality
+    # and
+    # http://web.as.uky.edu/statistics/users/pbreheny/621/F10/notes/8-26.pdf
+    alpha = 0.95
+    error_width = math.sqrt(1./2/len(data_none) * math.log(2/alpha))
+    error_width = np.ones(len(data_none)) * error_width
+    # Clip the error bounds to fit the domain of the CDF
+    error_width = np.clip(error_width, 0, 1)
+    plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3)
+# Poisson
+elif arg.errors == "poisson":
+    error_width = 1 / np.sqrt(range(1, len(y_axis)+1))
+    plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3)
+# Bunomial
+elif arg.errors == "binomial":
+    error_width = np.sqrt((y_axis * (1-y_axis)) / range(1, len(y_axis)+1))
+    plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3)
+
+"""
+# Jacknife -- only used for diagnostics
+else:
+    for j in range(len(data_none)):
+        cpy = np.concatenate((data_none[:j], data_none[(j+1):]))
+        y_axis = np.linspace(0,len(cpy)/float(len(cpy)),num=len(cpy))
+        plt.plot(cpy,y_axis,color='m',alpha=0.3)
+"""
 
 data_skyloc = collect_all_conflevels(param1,'skyloc', bpath)
 y_axis = np.linspace(0,len(data_skyloc)/float(len(data_skyloc)),num=len(data_skyloc))
