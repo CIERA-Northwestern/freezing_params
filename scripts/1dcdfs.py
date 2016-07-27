@@ -101,32 +101,32 @@ else:
 """
 
 data_skyloc = collect_all_conflevels(param1,'skyloc', bpath)
-y_axis = np.linspace(0,len(data_skyloc)/float(len(data_skyloc)),num=len(data_skyloc))
-plt.step(data_skyloc,y_axis,label='skyloc')
-
 stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc)
 print "KS test between none and skyloc: %1.2e" % ks_val
 
-data_skyloc_dist = collect_all_conflevels(param1,'skyloc_thetajn', bpath)
-y_axis = np.linspace(0,len(data_skyloc_dist)/float(len(data_skyloc_dist)),num=len(data_skyloc_dist))
-plt.step(data_skyloc_dist,y_axis,label='skyloc_dist')
+y_axis = np.linspace(0,len(data_skyloc)/float(len(data_skyloc)),num=len(data_skyloc))
+plt.step(data_skyloc,y_axis,label='skyloc (KS: %1.2e)' % ks_val)
 
+data_skyloc_dist = collect_all_conflevels(param1,'skyloc_thetajn', bpath)
 stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_dist)
 print "KS test between none and skyloc_dist: %1.2e" % ks_val
 
-data_skyloc_thetajn = collect_all_conflevels(param1,'skyloc_thetajn', bpath)
-y_axis = np.linspace(0,len(data_skyloc_thetajn)/float(len(data_skyloc_thetajn)),num=len(data_skyloc_thetajn))
-plt.step(data_skyloc_thetajn,y_axis,label='skyloc_thetajn')
+y_axis = np.linspace(0,len(data_skyloc_dist)/float(len(data_skyloc_dist)),num=len(data_skyloc_dist))
+plt.step(data_skyloc_dist,y_axis,label='skyloc_dist (KS: %1.2e)' % ks_val)
 
+data_skyloc_thetajn = collect_all_conflevels(param1,'skyloc_thetajn', bpath)
 stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn)
 print "KS test between none and skyloc_thetajn: %1.2e" % ks_val
 
-data_skyloc_thetajn_dist = collect_all_conflevels(param1,'skyloc_thetajn_dist', bpath)
-y_axis = np.linspace(0,len(data_skyloc_thetajn_dist)/float(len(data_skyloc_thetajn_dist)),num=len(data_skyloc_thetajn_dist))
-plt.step(data_skyloc_thetajn_dist,y_axis,label='skyloc_thetajn_dist')
+y_axis = np.linspace(0,len(data_skyloc_thetajn)/float(len(data_skyloc_thetajn)),num=len(data_skyloc_thetajn))
+plt.step(data_skyloc_thetajn,y_axis,label='skyloc_thetajn (KS: %1.2e)' % ks_val)
 
+data_skyloc_thetajn_dist = collect_all_conflevels(param1,'skyloc_thetajn_dist', bpath)
 stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn_dist)
 print "KS test between none and skyloc_thetajn_dist: %1.2e" % ks_val
+
+y_axis = np.linspace(0,len(data_skyloc_thetajn_dist)/float(len(data_skyloc_thetajn_dist)),num=len(data_skyloc_thetajn_dist))
+plt.step(data_skyloc_thetajn_dist,y_axis,label='skyloc_thetajn_dist (KS: %1.2e)' % ks_val)
 
 plt.xlabel('{0} confidence interval'.format(param1))
 plt.ylabel('Cumulative Probability')
