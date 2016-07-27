@@ -13,6 +13,8 @@ import scipy.stats
 #import plotutils
 #plotutils.latexify()
 
+import common
+
 parser = argparse.ArgumentParser(description='Freezing param analysis: histogram and cdf for specified parameter combos at 67,90,95 or 99%/ confidence')
 parser.add_argument("-p", '--param1', type=str, help='first parameter of interest')
 parser.add_argument("-b", '--basepath', type=str, help='base path to search for results')
@@ -78,7 +80,8 @@ if arg.errors == "bounded":
     error_width = np.ones(len(data_none)) * error_width
     # Clip the error bounds to fit the domain of the CDF
     error_width = np.clip(error_width, 0, 1)
-    plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3)
+    # FIXME: fill_between interpolates rather than using steps
+    plt.fill_between(data_none, y_axis - error_width, y_axis + error_width, color='k', alpha=0.3, interpolate=False)
 # Poisson
 elif arg.errors == "poisson":
     error_width = 1 / np.sqrt(range(1, len(y_axis)+1))
@@ -125,9 +128,16 @@ plt.step(data_skyloc_thetajn_dist,y_axis,label='skyloc_thetajn_dist')
 stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn_dist)
 print "KS test between none and skyloc_thetajn_dist: %1.2e" % ks_val
 
-plt.xlabel('{0}'.format(param1))
+plt.xlabel('{0} confidence interval'.format(param1))
 plt.ylabel('Cumulative Probability')
+plt.xlim(common.RANGES[param1])
 plt.ylim(0, 1)
 plt.grid()
 plt.legend(loc=4)
+
+# Add normalized axis
+ax2 = plt.twiny()
+ax2.set_xlim(0, 1)
+plt.xlabel('{0} normalized interval'.format(param1))
+
 plt.savefig('{0}_1Dcdf'.format(param1))
