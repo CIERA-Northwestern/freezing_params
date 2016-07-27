@@ -16,6 +16,6 @@ done
 #!/bin/bash
 module load python
 for p in mc q a1 a2 tilt1 tilt2; do
-    python 1dpdfs.py --param1 ${p} --basepath /projects/b1011/spinning_runs/freezingparams_20160402
+    python 1dpdfs.py --param1 ${p} --basepath /projects/b1011/spinning_runs/freezingparams_20160402 --inj-xml /projects/b1011/spinning_runs/STT2injections.xml
 done
 ```
