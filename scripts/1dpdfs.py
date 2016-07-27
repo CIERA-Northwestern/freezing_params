@@ -164,13 +164,13 @@ for (run, combo), samples in data_none.iteritems():
 
     hist[:,4], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
 
+    ax.locator_params(axis='x', nbins=3)
     # FIXME: plot disappears?
     xx, yy = np.meshgrid(b, range(6))
     plt.pcolormesh(xx, yy, hist.T, cmap=matplotlib.cm.Reds)
 
     # Set the number of ticks so its consistent across all plots
     plt.xlim(RANGES[param1])
-    ax.locator_params(axis='x', nbins=3)
     # Turn off tick marks where not necessary
     if i <= (nruns - spread_factor):
         ax.set_xticklabels([])
@@ -205,4 +205,4 @@ for (run, combo), samples in data_none.iteritems():
 
 plt.tight_layout()
 plt.subplots_adjust(hspace=0)
-plt.savefig("%s_1dpdfs" % param1)
+plt.savefig("%s_1Dpdf" % param1)
