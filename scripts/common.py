@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np
 
 def chirp_mass(r):
     return (r.mass1 * r.mass2)**(3./5) / (r.mass1 + r.mass2)**(1./5)
@@ -16,6 +16,10 @@ def spin_mag1(r):
 
 def spin_mag2(r):
     return np.sqrt(r.spin2x**2+r.spin2y**2+r.spin2z**2)
+
+def range_from_param(pname):
+    pr = RANGES[pname]
+    return abs(pr[1] - pr[0])
 
 # FIXME: The *injected* range for mc in 2 -- 7 ish.
 # The posteriors go way beyond this -- this leads to everything concentrated in

@@ -130,7 +130,7 @@ plt.step(data_skyloc_thetajn_dist,y_axis,label='skyloc_thetajn_dist (KS: %1.2e)'
 
 plt.xlabel('{0} confidence interval'.format(param1))
 plt.ylabel('Cumulative Probability')
-plt.xlim(common.RANGES[param1])
+plt.xlim(0, common.range_from_param(param1))
 plt.ylim(0, 1)
 plt.grid()
 plt.legend(loc=4)
