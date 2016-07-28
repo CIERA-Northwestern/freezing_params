@@ -107,7 +107,7 @@ print "KS test between none and skyloc: %1.2e" % ks_val
 y_axis = np.linspace(0,len(data_skyloc)/float(len(data_skyloc)),num=len(data_skyloc))
 plt.step(data_skyloc,y_axis,label='skyloc (KS: %1.2e)' % ks_val)
 
-data_skyloc_dist = collect_all_conflevels(param1,'skyloc_thetajn', bpath)
+data_skyloc_dist = collect_all_conflevels(param1,'skyloc_dist', bpath)
 stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_dist)
 print "KS test between none and skyloc_dist: %1.2e" % ks_val
 
