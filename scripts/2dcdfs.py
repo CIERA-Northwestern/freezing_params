@@ -136,4 +136,4 @@ ax2 = plt.twiny()
 ax2.set_xlim(0,1)
 plt.xlabel('{0} normalized interval'.format(param1))
 
-plt.savefig('2Dhists/{0}_{1}_{2}_cdf'.format(param1, param2, arg.errors))
+plt.savefig('2cdfs/{0}_{1}_{2}_cdf'.format(param1, param2, arg.errors))
