@@ -10,7 +10,8 @@ import pylab
 import argparse
 import scipy.stats
 import math
-#import common
+
+import common
 
 parser = argparse.ArgumentParser(description='Freezing param analysis: histogram and cdf for specified parameter combos at 67,90,95 or 99%/ confidence')
 parser.add_argument('--param1', type=str, help='first parameter of interest')
@@ -125,15 +126,16 @@ plt.step(data_skyloc_thetajn_dist, y_axis, label='skyloc_thetajn_dist (KS: %1.2e
 
 plt.xlabel('{0},{1}'.format(param1, param2))
 plt.ylabel('Cumulative Probability')
-#plt.xlim(common.RANGES[param1])
-plt.xlim(0, data_none[-1])
+print common.range_from_param(param1) * common.range_from_param(param2)
+plt.xlim(0, common.range_from_param(param1) * common.range_from_param(param2))
+#plt.xlim(0, data_none[-1])
 plt.ylim(0, 1)
 plt.grid()
 plt.legend(loc=4)
 
 # Add normalized axis
 ax2 = plt.twiny()
-ax2.set_xlim(0,1)
+ax2.set_xlim(0, 1)
 plt.xlabel('{0} normalized interval'.format(param1))
 
-plt.savefig('2Dhists/{0}_{1}_{2}_cdf'.format(param1, param2, arg.errors))
+plt.savefig('2Dcdfs/{0}_{1}_{2}_cdf'.format(param1, param2, arg.errors))
