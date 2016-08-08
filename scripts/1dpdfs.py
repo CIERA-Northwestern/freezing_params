@@ -99,32 +99,47 @@ i, ncat, nbins = 1, 5, 20
 for (run, combo), samples in data_none.iteritems():
     ax = plt.subplot(nruns/spread_factor+1, spread_factor, i)
 
-    hist = np.empty((nbins, ncat))
+    hist = np.zeros((nbins, ncat))
 
     hist[:,0], b = np.histogram(samples, bins=nbins, range=RANGES[param1], normed=True)
     if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
         print "(%s) Warning some samples are outside the range." % run
 
-    samples = data_skyloc[(run, "skyloc")]
-    if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
-        print "(%s) Warning some samples are outside the range." % run
+    try:
+        samples = data_skyloc[(run, "skyloc")]
+        if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
+            print "(%s) Warning some samples are outside the range." % run
 
-    hist[:,1], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
-    samples = data_skyloc_dist[(run, "skyloc_dist")]
-    if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
-        print "(%s) Warning some samples are outside the range." % run
+        hist[:,1], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
+    except KeyError:
+        pass
 
-    hist[:,2], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
-    samples = data_skyloc_thetajn[(run, "skyloc_thetajn")]
-    if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
-        print "(%s) Warning some samples are outside the range." % run
+    try:
+        samples = data_skyloc_dist[(run, "skyloc_dist")]
+        if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
+            print "(%s) Warning some samples are outside the range." % run
 
-    hist[:,3], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
-    samples = data_skyloc_thetajn_dist[(run, "skyloc_thetajn_dist")]
-    if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
-        print "(%s) Warning some samples are outside the range." % run
+        hist[:,2], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
+    except KeyError:
+        pass
 
-    hist[:,4], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
+    try:
+        samples = data_skyloc_thetajn[(run, "skyloc_thetajn")]
+        if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
+            print "(%s) Warning some samples are outside the range." % run
+
+        hist[:,3], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
+    except KeyError:
+        pass
+
+    try:
+        samples = data_skyloc_thetajn_dist[(run, "skyloc_thetajn_dist")]
+        if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
+            print "(%s) Warning some samples are outside the range." % run
+
+        hist[:,4], _ = np.histogram(samples, bins=b, range=RANGES[param1], normed=True)
+    except KeyError:
+        pass
 
     ax.locator_params(axis='x', nbins=3)
     # FIXME: plot disappears?
@@ -142,6 +157,10 @@ for (run, combo), samples in data_none.iteritems():
     # Plot confidence band
     for j, h in enumerate(hist.T):
         ymin, ymax = j / float(ncat), (j+1) / float(ncat)
+
+        if len(np.nonzero(h)) == 0:
+            print "Skipping %s %s, no data" % (run, combo)
+            continue
 
         #intrv = conf_intrv(h, b)
         for intrv in conf_intrv2(h, b):
