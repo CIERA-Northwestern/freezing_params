@@ -62,8 +62,10 @@ def collect_all_conflevels(param1, combo, bpath):
 ls_keys = ['-', '-.', '--']
 color_vals = ['k', 'b', 'g', 'r', 'c']
 
+ntypes, i = len(bpaths), 1
 for label, bpath in bpaths.iteritems():
     print "-------- Plotting %s CDFs for param %s" % (label, param1)
+    plt.subplot(ntypes, 1, i)
 
     #plotting the cdfs
     data_none = collect_all_conflevels(param1,'none', bpath)
@@ -137,18 +139,22 @@ for label, bpath in bpaths.iteritems():
     plt.step(data_skyloc_thetajn_dist,y_axis,label='skyloc_thetajn_dist (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
     color_vals.append(color_vals.pop(0))
 
-    ls_keys.append(ls_keys.pop(0))
+    #ls_keys.append(ls_keys.pop(0))
+    plt.ylabel('Cumulative Fraction')
+    plt.xlim(0, common.range_from_param(param1))
+    plt.ylim(0, 1)
+    plt.grid()
+    plt.legend(loc=4,fontsize=10)
 
+    # Add normalized axis
+    if i == 1:
+        plt.gca().set_xticklabels([])
+        ax2 = plt.twiny()
+        ax2.set_xlim(0, 1)
+        plt.xlabel('{0} normalized interval'.format(param1))
+    i += 1
+
+plt.subplots_adjust(hspace=0)
 plt.xlabel('{0} confidence interval'.format(param1))
-plt.ylabel('Cumulative Probability')
-plt.xlim(0, common.range_from_param(param1))
-plt.ylim(0, 1)
-plt.grid()
-plt.legend(loc=4,fontsize=10)
-
-# Add normalized axis
-ax2 = plt.twiny()
-ax2.set_xlim(0, 1)
-plt.xlabel('{0} normalized interval'.format(param1))
 
 plt.savefig('{0}_1Dcdf'.format(param1))
