@@ -141,8 +141,6 @@ for (run, combo), samples in data_none.iteritems():
     except KeyError:
         pass
 
-    hist = np.ma.masked_equal(hist, 0)
-
     ax.locator_params(axis='x', nbins=3)
     # FIXME: plot disappears?
     xx, yy = np.meshgrid(b, range(6))
@@ -160,7 +158,8 @@ for (run, combo), samples in data_none.iteritems():
     for j, h in enumerate(hist.T):
         ymin, ymax = j / float(ncat), (j+1) / float(ncat)
 
-        if h.count() == 0:
+        if len(np.nonzero(h)) == 0:
+            print "Skipping %s %s, no data" % (run, combo)
             continue
 
         #intrv = conf_intrv(h, b)
