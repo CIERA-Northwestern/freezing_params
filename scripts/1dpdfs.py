@@ -90,13 +90,13 @@ if arg.inj_xml:
 # Number of columns
 spread_factor = 4
 # number of rows * columns
-nruns = len(data_none)
+nruns = len(data_skyloc_thetajn_dist)
 print "Collected %d runs, dividing into %d columns" % (nruns, spread_factor)
 
 #plt.figure(figsize=(8,15))
 i, ncat, nbins = 1, 5, 20
 # Iterate through data and form posteriors
-for (run, combo), samples in data_none.iteritems():
+for (run, combo), samples in data_skyloc_thetajn_dist.iteritems():
     ax = plt.subplot(nruns/spread_factor+1, spread_factor, i)
 
     hist = np.zeros((nbins, ncat))

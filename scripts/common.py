@@ -50,3 +50,16 @@ GET_PARAM = {
     "ra": lambda r: r.longitude,
     "dec": lambda r: r.latitude
 }
+
+LABELS = {
+    "mc": r"$\mathcal{M}_c$",
+    "q": r"$q$",
+    "tilt1": r"$\theta_1$",
+    "tilt2": r"$\theta_2$",
+    "a1": r"$a_1$",
+    "a2": r"$a_2$",
+    "theta_jn": r"$\theta_{JN}$",
+    "distance": r"$d_L$",
+    "ra": r"$\alpha$",
+    "dec": r"$\delta$"
+}
