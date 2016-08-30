@@ -161,8 +161,10 @@ for label, bpath in bpaths.iteritems():
             plt.xlabel('{0} normalized interval'.format(param))
         """
 
-        if j == (ntypes-1):
+        if j == 0:
             plt.xlabel(common.LABELS[param])
+            plt.gca().xaxis.set_label_position('top')
+        if j == (ntypes-1):
             plt.xticks(rotation=45)
         else:
             plt.gca().set_xticklabels([])
