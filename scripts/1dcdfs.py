@@ -19,6 +19,7 @@ parser = argparse.ArgumentParser(description='Freezing param analysis: histogram
 parser.add_argument("-p", '--param1', type=str, action='append', help='first parameter of interest')
 parser.add_argument("-b", '--basepath', type=str, action='append', help='base path to search for results. Must be specified as label=path')
 parser.add_argument("-e", '--errors', type=str, default='bounded', help='Plot these types of error bars. Valid choices are: none, bounded, poisson, binomial. Default is \'bounded\'')
+parser.add_argument("-k", '--ks-table', action='store_true', help='Dump table of KS values for calculated parameter combos.')
 # parser.add_argument('confidence', type=int, nargs='?', default=90, help='confidence region(67,90,95,99)')
 arg = parser.parse_args()
 if arg.errors not in ('none', 'bounded', 'poisson', 'binomial'):
@@ -62,10 +63,20 @@ def collect_all_conflevels(param1, combo, bpath):
 ls_keys = ['-', '-.', '--']
 color_vals = ['b', 'g', 'r', 'c', 'k']
 
+if arg.ks_table:
+    ks_out = open("ks_values.txt", "w")
+else:
+    ks_out = open("/dev/null", "w")
+left_pad = max(map(len, ("param skyloc skyloc_dist skyloc_thetajn skyloc_thetajn_dist".split())))
+
 ntypes, j = len(bpaths), 0
 i = 1
 for label, bpath in bpaths.iteritems():
+    print >>ks_out, "## %s\n" % label
+    tbl_row = "| param | skyloc | skyloc_dist | skyloc_thetajn | skyloc_thetajn_dist |\n"
+    tbl_row += "| --- | --- | --- | --- | --- |\n"
     for param in param1:
+        tbl_row += "| %s |" % param
         print "-------- Plotting %s CDFs for param %s" % (label, param)
         plt.subplot(ntypes, len(param1), i)
 
@@ -108,6 +119,7 @@ for label, bpath in bpaths.iteritems():
         data_skyloc = collect_all_conflevels(param,'skyloc', bpath)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc)
         print "KS test between none and skyloc: %1.2e" % ks_val
+        tbl_row += " %1.2e |" % ks_val
 
         y_axis = np.linspace(0,len(data_skyloc)/float(len(data_skyloc)),num=len(data_skyloc))
         plt.step(data_skyloc,y_axis,label='skyloc (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
@@ -116,6 +128,7 @@ for label, bpath in bpaths.iteritems():
         data_skyloc_dist = collect_all_conflevels(param,'skyloc_dist', bpath)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_dist)
         print "KS test between none and skyloc_dist: %1.2e" % ks_val
+        tbl_row += " %1.2e |" % ks_val
 
         y_axis = np.linspace(0,len(data_skyloc_dist)/float(len(data_skyloc_dist)),num=len(data_skyloc_dist))
         plt.step(data_skyloc_dist,y_axis,label='skyloc_dist (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
@@ -124,6 +137,7 @@ for label, bpath in bpaths.iteritems():
         data_skyloc_thetajn = collect_all_conflevels(param,'skyloc_thetajn', bpath)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn)
         print "KS test between none and skyloc_thetajn: %1.2e" % ks_val
+        tbl_row += " %1.2e |" % ks_val
 
         y_axis = np.linspace(0,len(data_skyloc_thetajn)/float(len(data_skyloc_thetajn)),num=len(data_skyloc_thetajn))
         plt.step(data_skyloc_thetajn,y_axis,label='skyloc_thetajn (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
@@ -132,6 +146,7 @@ for label, bpath in bpaths.iteritems():
         data_skyloc_thetajn_dist = collect_all_conflevels(param,'skyloc_thetajn_dist', bpath)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn_dist)
         print "KS test between none and skyloc_thetajn_dist: %1.2e" % ks_val
+        tbl_row += " %1.2e |" % ks_val
 
         y_axis = np.linspace(0,len(data_skyloc_thetajn_dist)/float(len(data_skyloc_thetajn_dist)),num=len(data_skyloc_thetajn_dist))
         plt.step(data_skyloc_thetajn_dist,y_axis,label='skyloc_thetajn_dist (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
@@ -170,7 +185,11 @@ for label, bpath in bpaths.iteritems():
             plt.gca().set_xticklabels([])
 
         i += 1
+        tbl_row += "\n"
+    print >>ks_out, tbl_row
     j += 1
+
+ks_out.close()
 
 plt.subplots_adjust(hspace=0, wspace=0)
 
