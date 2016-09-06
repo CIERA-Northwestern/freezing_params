@@ -23,6 +23,8 @@
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
+Was rerun without the malmquist prior; does not reach the appropriate SNR value
+
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
 | 17.256286 | 2.834688 | 17.256286 | 2.834688 |
