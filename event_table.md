@@ -23,6 +23,8 @@
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
+Was rerun without the malmquist prior; does not reach the appropriate SNR value
+
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
 | 17.256286 | 2.834688 | 17.256286 | 2.834688 |
@@ -543,6 +545,8 @@
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
+The run with no parameters locked only contains 45 posterior samples.
+
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
 | 14.755414 | 1.781253 | 14.755414 | 1.781253 |
@@ -602,6 +606,8 @@
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
+
+Effective spin not within appropriate range for IMRPhenomPv2
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -802,6 +808,8 @@
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
+
+SNR too low; only 570 posterior samples for the run with no parameters locked
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1043,6 +1051,8 @@
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
+SNR too low; low number of posterior samples
+
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
 | 16.597577 | 1.673009 | 16.597577 | 1.673009 |
@@ -1282,6 +1292,8 @@
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
+
+Low SNR; very few posterior samples
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1702,6 +1714,8 @@
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
+
+Low number of effective samples; failed to find appropriate M_chirp; could reasonably be left in
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
