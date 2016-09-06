@@ -1,4 +1,4 @@
-## 102/none/snr.txt
+## Event 102
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -10,6 +10,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.011664 | 0.141412 | -0.011664 | 0.141412 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.70 | 6.18 |
@@ -17,7 +18,7 @@
 | Network | 9.63 | 9.06 |
 | L1 | 5.20 | 5.00 |
 
-## 105/none/snr.txt
+## Event 105
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -29,6 +30,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.540042 | 0.402747 | -0.540042 | 0.402747 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 0.99 | 0.99 |
@@ -36,7 +38,7 @@
 | Network | 5.18 | 5.18 |
 | L1 | 3.60 | 3.58 |
 
-## 11/none/snr.txt
+## Event 11
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -48,6 +50,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.133448 | 0.319496 | -0.133448 | 0.319496 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 7.59 | 6.53 |
@@ -55,7 +58,7 @@
 | Network | 21.46 | 21.52 |
 | L1 | 14.64 | 15.09 |
 
-## 112/none/snr.txt
+## Event 112
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -67,6 +70,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.062389 | 0.212385 | 0.062389 | 0.212385 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.40 | 3.87 |
@@ -74,7 +78,7 @@
 | Network | 12.09 | 10.82 |
 | L1 | 7.18 | 6.42 |
 
-## 118/none/snr.txt
+## Event 118
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -86,6 +90,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.573043 | 0.498494 | -0.573043 | 0.498494 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 14.64 | 14.01 |
@@ -93,7 +98,7 @@
 | Network | 18.44 | 17.43 |
 | L1 | 9.12 | 8.42 |
 
-## 124/none/snr.txt
+## Event 124
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -105,6 +110,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.429188 | 0.197245 | 0.429188 | 0.197245 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 7.31 | 6.41 |
@@ -112,7 +118,7 @@
 | Network | 11.17 | 9.82 |
 | L1 | 6.57 | 5.54 |
 
-## 129/none/snr.txt
+## Event 129
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -124,6 +130,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.180683 | 0.354720 | -0.180683 | 0.354720 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.04 | 3.89 |
@@ -131,7 +138,7 @@
 | Network | 13.55 | 13.11 |
 | L1 | 7.71 | 7.45 |
 
-## 132/none/snr.txt
+## Event 132
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -143,6 +150,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.324122 | 0.104641 | -0.324122 | 0.104641 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.33 | 2.20 |
@@ -150,7 +158,7 @@
 | Network | 15.45 | 15.30 |
 | L1 | 10.30 | 10.17 |
 
-## 138/none/snr.txt
+## Event 138
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -162,6 +170,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.157165 | 0.205309 | 0.157165 | 0.205309 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.55 | 2.48 |
@@ -169,7 +178,7 @@
 | Network | 9.29 | 8.94 |
 | L1 | 7.17 | 6.90 |
 
-## 171/none/snr.txt
+## Event 171
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -181,6 +190,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.044310 | 0.471282 | -0.044310 | 0.471282 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.78 | 4.77 |
@@ -188,7 +198,7 @@
 | Network | 11.87 | 11.74 |
 | L1 | 7.67 | 7.58 |
 
-## 194/none/snr.txt
+## Event 194
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -200,6 +210,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.617026 | 0.407707 | 0.617026 | 0.407707 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 10.24 | 9.18 |
@@ -207,7 +218,7 @@
 | Network | 22.05 | 19.86 |
 | L1 | 11.95 | 10.77 |
 
-## 218/none/snr.txt
+## Event 218
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -219,6 +230,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.246115 | 0.499071 | 0.246115 | 0.499071 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.42 | 3.11 |
@@ -226,7 +238,7 @@
 | Network | 24.65 | 22.60 |
 | L1 | 16.24 | 14.89 |
 
-## 23/none/snr.txt
+## Event 23
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -238,6 +250,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.233957 | 0.132590 | -0.233957 | 0.132590 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.17 | 4.61 |
@@ -245,7 +258,7 @@
 | Network | 7.96 | 10.54 |
 | L1 | 3.93 | 5.08 |
 
-## 236/none/snr.txt
+## Event 236
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -257,6 +270,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.308780 | 0.530668 | 0.308780 | 0.530668 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 7.39 | 7.01 |
@@ -264,7 +278,7 @@
 | Network | 10.07 | 9.55 |
 | L1 | 5.02 | 4.71 |
 
-## 240/none/snr.txt
+## Event 240
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -276,6 +290,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.727520 | 0.150689 | 0.727520 | 0.150689 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.06 | 1.71 |
@@ -283,7 +298,7 @@
 | Network | 7.01 | 6.21 |
 | L1 | 5.28 | 4.69 |
 
-## 243/none/snr.txt
+## Event 243
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -295,6 +310,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.134458 | 0.379501 | -0.134458 | 0.379501 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.55 | 3.68 |
@@ -302,7 +318,7 @@
 | Network | 7.12 | 7.36 |
 | L1 | 4.46 | 4.61 |
 
-## 244/none/snr.txt
+## Event 244
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -314,6 +330,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.036974 | 0.858743 | -0.036974 | 0.858743 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.72 | 4.99 |
@@ -321,7 +338,7 @@
 | Network | 26.48 | 22.28 |
 | L1 | 18.53 | 15.51 |
 
-## 262/none/snr.txt
+## Event 262
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -333,6 +350,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.555374 | 0.589090 | -0.555374 | 0.589090 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.04 | 8.24 |
@@ -340,7 +358,7 @@
 | Network | 10.52 | 14.74 |
 | L1 | 6.66 | 9.48 |
 
-## 273/none/snr.txt
+## Event 273
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -352,6 +370,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.328709 | 0.471377 | 0.328709 | 0.471377 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.70 | 3.51 |
@@ -359,7 +378,7 @@
 | Network | 14.51 | 13.64 |
 | L1 | 10.13 | 9.52 |
 
-## 281/none/snr.txt
+## Event 281
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -371,6 +390,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.194800 | 0.389251 | 0.194800 | 0.389251 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 18.06 | 17.14 |
@@ -378,7 +398,7 @@
 | Network | 40.81 | 38.86 |
 | L1 | 22.56 | 21.50 |
 
-## 292/none/snr.txt
+## Event 292
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -390,6 +410,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.414807 | 0.159657 | 0.414807 | 0.159657 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 8.29 | 7.38 |
@@ -397,7 +418,7 @@
 | Network | 16.96 | 15.12 |
 | L1 | 9.58 | 8.53 |
 
-## 320/none/snr.txt
+## Event 320
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -409,6 +430,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.035740 | 0.088635 | 0.035740 | 0.088635 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 0.63 | 0.59 |
@@ -416,7 +438,7 @@
 | Network | 8.08 | 7.56 |
 | L1 | 5.34 | 4.99 |
 
-## 339/none/snr.txt
+## Event 339
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -428,6 +450,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.208978 | 0.200285 | 0.208978 | 0.200285 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.96 | 3.43 |
@@ -435,7 +458,7 @@
 | Network | 12.81 | 11.10 |
 | L1 | 8.87 | 7.67 |
 
-## 346/none/snr.txt
+## Event 346
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -447,6 +470,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.211196 | 0.658910 | 0.211196 | 0.658910 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.81 | 4.97 |
@@ -454,7 +478,7 @@
 | Network | 9.66 | 8.38 |
 | L1 | 5.79 | 5.08 |
 
-## 359/none/snr.txt
+## Event 359
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -466,6 +490,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.084912 | 0.261567 | -0.084912 | 0.261567 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.03 | 3.95 |
@@ -473,7 +498,7 @@
 | Network | 12.44 | 12.38 |
 | L1 | 9.25 | 9.22 |
 
-## 370/none/snr.txt
+## Event 370
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -485,6 +510,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.174728 | 0.214409 | -0.174728 | 0.214409 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.49 | 4.39 |
@@ -492,7 +518,7 @@
 | Network | 9.46 | 7.64 |
 | L1 | 5.25 | 4.22 |
 
-## 376/none/snr.txt
+## Event 376
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -504,6 +530,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.102192 | 0.103131 | -0.102192 | 0.103131 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.96 | 3.68 |
@@ -511,7 +538,7 @@
 | Network | 9.85 | 9.36 |
 | L1 | 6.16 | 5.89 |
 
-## 378/none/snr.txt
+## Event 378
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -523,6 +550,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.182944 | 0.721029 | -0.182944 | 0.721029 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.97 | 2.66 |
@@ -530,7 +558,7 @@
 | Network | 11.25 | 10.12 |
 | L1 | 8.73 | 7.85 |
 
-## 386/none/snr.txt
+## Event 386
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -542,6 +570,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.268150 | 0.209262 | -0.268150 | 0.209262 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.34 | 3.80 |
@@ -549,7 +578,7 @@
 | Network | 15.26 | 13.32 |
 | L1 | 10.71 | 9.52 |
 
-## 391/none/snr.txt
+## Event 391
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -561,6 +590,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.368663 | 0.326546 | -0.368663 | 0.326546 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.87 | 5.97 |
@@ -568,7 +598,7 @@
 | Network | 5.52 | 12.73 |
 | L1 | 3.92 | 8.39 |
 
-## 392/none/snr.txt
+## Event 392
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -580,6 +610,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.837693 | 0.181857 | -0.837693 | 0.181857 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.12 | 6.95 |
@@ -587,7 +618,7 @@
 | Network | 7.22 | 12.52 |
 | L1 | 3.65 | 5.84 |
 
-## 404/none/snr.txt
+## Event 404
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -599,6 +630,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.161118 | 0.536419 | 0.161118 | 0.536419 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.98 | 1.58 |
@@ -606,7 +638,7 @@
 | Network | 8.32 | 7.38 |
 | L1 | 5.61 | 5.14 |
 
-## 416/none/snr.txt
+## Event 416
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -618,6 +650,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.158214 | 0.382597 | 0.158214 | 0.382597 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.25 | 3.96 |
@@ -625,7 +658,7 @@
 | Network | 11.05 | 10.38 |
 | L1 | 8.23 | 7.74 |
 
-## 423/none/snr.txt
+## Event 423
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -637,6 +670,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.649568 | 0.513206 | 0.649568 | 0.513206 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 15.43 | 12.54 |
@@ -644,7 +678,7 @@
 | Network | 25.78 | 21.33 |
 | L1 | 15.75 | 13.17 |
 
-## 44/none/snr.txt
+## Event 44
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -656,6 +690,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.052475 | 0.098549 | 0.052475 | 0.098549 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.26 | 1.16 |
@@ -663,7 +698,7 @@
 | Network | 12.06 | 11.24 |
 | L1 | 7.83 | 7.29 |
 
-## 450/none/snr.txt
+## Event 450
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -675,6 +710,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.688905 | 0.410875 | 0.688905 | 0.410875 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.84 | 3.28 |
@@ -682,7 +718,7 @@
 | Network | 11.69 | 12.61 |
 | L1 | 8.30 | 8.91 |
 
-## 469/none/snr.txt
+## Event 469
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -694,6 +730,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.550749 | 0.606693 | -0.550749 | 0.606693 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.31 | 2.91 |
@@ -701,7 +738,7 @@
 | Network | 8.03 | 7.06 |
 | L1 | 5.40 | 4.72 |
 
-## 484/none/snr.txt
+## Event 484
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -713,6 +750,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.208705 | 0.096534 | -0.208705 | 0.096534 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 8.65 | 7.93 |
@@ -720,7 +758,7 @@
 | Network | 14.18 | 14.06 |
 | L1 | 7.45 | 7.74 |
 
-## 486/none/snr.txt
+## Event 486
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -732,6 +770,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.278022 | 0.556009 | -0.278022 | 0.556009 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.22 | 2.05 |
@@ -739,7 +778,7 @@
 | Network | 7.14 | 6.57 |
 | L1 | 5.06 | 4.67 |
 
-## 498/none/snr.txt
+## Event 498
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -751,6 +790,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.770729 | 0.427781 | -0.770729 | 0.427781 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.14 | 0.93 |
@@ -758,7 +798,7 @@
 | Network | 7.90 | 6.70 |
 | L1 | 4.73 | 4.01 |
 
-## 529/none/snr.txt
+## Event 529
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -770,6 +810,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.314189 | 0.263086 | -0.314189 | 0.263086 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.90 | 1.53 |
@@ -777,7 +818,7 @@
 | Network | 6.23 | 4.99 |
 | L1 | 3.96 | 3.18 |
 
-## 53/none/snr.txt
+## Event 53
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -789,6 +830,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.253896 | 0.635902 | -0.253896 | 0.635902 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.44 | 5.10 |
@@ -796,7 +838,7 @@
 | Network | 9.89 | 11.23 |
 | L1 | 5.72 | 6.48 |
 
-## 536/none/snr.txt
+## Event 536
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -808,6 +850,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.381971 | 0.517299 | 0.381971 | 0.517299 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.89 | 4.28 |
@@ -815,7 +858,7 @@
 | Network | 12.90 | 11.71 |
 | L1 | 8.59 | 7.78 |
 
-## 553/none/snr.txt
+## Event 553
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -827,6 +870,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.019225 | 0.612797 | -0.019225 | 0.612797 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.90 | 5.58 |
@@ -834,7 +878,7 @@
 | Network | 12.56 | 11.91 |
 | L1 | 7.98 | 7.56 |
 
-## 566/none/snr.txt
+## Event 566
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -846,6 +890,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.227545 | 0.413075 | -0.227545 | 0.413075 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 7.25 | 6.86 |
@@ -853,7 +898,7 @@
 | Network | 24.03 | 22.96 |
 | L1 | 16.95 | 16.20 |
 
-## 572/none/snr.txt
+## Event 572
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -865,6 +910,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.034035 | 0.632309 | -0.034035 | 0.632309 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 10.36 | 9.88 |
@@ -872,7 +918,7 @@
 | Network | 13.28 | 12.55 |
 | L1 | 5.44 | 5.06 |
 
-## 576/none/snr.txt
+## Event 576
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -884,6 +930,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.024638 | 0.042476 | -0.024638 | 0.042476 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.66 | 2.41 |
@@ -891,7 +938,7 @@
 | Network | 9.29 | 8.63 |
 | L1 | 7.01 | 6.57 |
 
-## 610/none/snr.txt
+## Event 610
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -903,6 +950,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.302308 | 0.162739 | -0.302308 | 0.162739 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.12 | 3.62 |
@@ -910,7 +958,7 @@
 | Network | 9.83 | 9.20 |
 | L1 | 7.36 | 6.95 |
 
-## 63/none/snr.txt
+## Event 63
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -922,6 +970,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.017485 | 0.397336 | -0.017485 | 0.397336 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.09 | 4.83 |
@@ -929,7 +978,7 @@
 | Network | 9.85 | 9.27 |
 | L1 | 6.24 | 5.87 |
 
-## 636/none/snr.txt
+## Event 636
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -941,6 +990,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.048343 | 0.055110 | 0.048343 | 0.055110 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.53 | 3.22 |
@@ -948,7 +998,7 @@
 | Network | 11.40 | 9.73 |
 | L1 | 8.60 | 7.28 |
 
-## 640/none/snr.txt
+## Event 640
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -960,6 +1010,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.245976 | 0.404101 | -0.245976 | 0.404101 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.27 | 4.32 |
@@ -967,7 +1018,7 @@
 | Network | 14.06 | 14.16 |
 | L1 | 9.93 | 9.99 |
 
-## 647/none/snr.txt
+## Event 647
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -979,6 +1030,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.098649 | 0.767713 | 0.098649 | 0.767713 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.16 | 4.12 |
@@ -986,7 +1038,7 @@
 | Network | 14.68 | 13.99 |
 | L1 | 10.58 | 10.34 |
 
-## 650/none/snr.txt
+## Event 650
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -998,6 +1050,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.415284 | 0.535909 | 0.415284 | 0.535909 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.91 | 1.74 |
@@ -1005,7 +1058,7 @@
 | Network | 8.08 | 7.48 |
 | L1 | 5.38 | 4.97 |
 
-## 654/none/snr.txt
+## Event 654
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1017,6 +1070,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.323741 | 0.257149 | 0.323741 | 0.257149 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 9.92 | 9.51 |
@@ -1024,7 +1078,7 @@
 | Network | 21.05 | 20.21 |
 | L1 | 12.47 | 11.81 |
 
-## 655/none/snr.txt
+## Event 655
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1036,6 +1090,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.304305 | 0.527926 | 0.304305 | 0.527926 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 8.22 | 7.57 |
@@ -1043,7 +1098,7 @@
 | Network | 12.15 | 11.20 |
 | L1 | 5.28 | 4.89 |
 
-## 666/none/snr.txt
+## Event 666
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1055,6 +1110,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.255133 | 0.812388 | 0.255133 | 0.812388 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.67 | 3.88 |
@@ -1062,7 +1118,7 @@
 | Network | 12.55 | 13.40 |
 | L1 | 9.23 | 9.86 |
 
-## 67/none/snr.txt
+## Event 67
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1074,6 +1130,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.672440 | 0.348448 | -0.672440 | 0.348448 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.67 | 6.33 |
@@ -1081,7 +1138,7 @@
 | Network | 14.70 | 13.87 |
 | L1 | 8.99 | 8.45 |
 
-## 677/none/snr.txt
+## Event 677
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1093,6 +1150,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.051682 | 0.307800 | -0.051682 | 0.307800 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.27 | 3.18 |
@@ -1100,7 +1158,7 @@
 | Network | 10.69 | 8.11 |
 | L1 | 5.54 | 4.22 |
 
-## 680/none/snr.txt
+## Event 680
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1112,6 +1170,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.247549 | 0.628658 | 0.247549 | 0.628658 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.58 | 5.71 |
@@ -1119,7 +1178,7 @@
 | Network | 21.75 | 19.46 |
 | L1 | 16.46 | 14.77 |
 
-## 698/none/snr.txt
+## Event 698
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1131,6 +1190,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.129128 | 0.444391 | 0.129128 | 0.444391 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 0.93 | 0.85 |
@@ -1138,7 +1198,7 @@
 | Network | 6.84 | 6.77 |
 | L1 | 4.69 | 4.64 |
 
-## 716/none/snr.txt
+## Event 716
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1150,6 +1210,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.125960 | 0.039315 | 0.125960 | 0.039315 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 9.98 | 9.30 |
@@ -1157,7 +1218,7 @@
 | Network | 17.42 | 16.23 |
 | L1 | 9.39 | 8.75 |
 
-## 729/none/snr.txt
+## Event 729
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1169,6 +1230,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.421767 | 0.722169 | 0.421767 | 0.722169 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.27 | 4.56 |
@@ -1176,7 +1238,7 @@
 | Network | 9.38 | 8.30 |
 | L1 | 5.67 | 5.00 |
 
-## 733/none/snr.txt
+## Event 733
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1188,6 +1250,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.014942 | 0.170825 | -0.014942 | 0.170825 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 8.17 | 7.56 |
@@ -1195,7 +1258,7 @@
 | Network | 13.69 | 12.69 |
 | L1 | 7.24 | 6.71 |
 
-## 770/none/snr.txt
+## Event 770
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1207,6 +1270,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.303755 | 0.381622 | 0.303755 | 0.381622 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.28 | 4.93 |
@@ -1214,7 +1278,7 @@
 | Network | 13.43 | 12.09 |
 | L1 | 9.41 | 8.44 |
 
-## 775/none/snr.txt
+## Event 775
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1226,6 +1290,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.655164 | 0.357220 | -0.655164 | 0.357220 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.67 | 4.15 |
@@ -1233,7 +1298,7 @@
 | Network | 5.10 | 6.74 |
 | L1 | 2.72 | 3.22 |
 
-## 796/none/snr.txt
+## Event 796
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1245,6 +1310,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.085781 | 0.016362 | -0.085781 | 0.016362 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.64 | 3.39 |
@@ -1252,7 +1318,7 @@
 | Network | 9.45 | 8.86 |
 | L1 | 5.40 | 5.07 |
 
-## 802/none/snr.txt
+## Event 802
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1264,6 +1330,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.129970 | 0.069184 | 0.129970 | 0.069184 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 11.88 | 10.97 |
@@ -1271,7 +1338,7 @@
 | Network | 17.08 | 15.83 |
 | L1 | 9.34 | 8.65 |
 
-## 804/none/snr.txt
+## Event 804
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1283,6 +1350,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.033456 | 0.084766 | -0.033456 | 0.084766 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.79 | 4.92 |
@@ -1290,7 +1358,7 @@
 | Network | 18.63 | 16.24 |
 | L1 | 13.56 | 11.85 |
 
-## 820/none/snr.txt
+## Event 820
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1302,6 +1370,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.040898 | 0.136782 | 0.040898 | 0.136782 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.04 | 3.94 |
@@ -1309,7 +1378,7 @@
 | Network | 11.66 | 11.17 |
 | L1 | 6.71 | 6.40 |
 
-## 821/none/snr.txt
+## Event 821
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1321,6 +1390,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.006274 | 0.008517 | -0.006274 | 0.008517 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 18.24 | 16.81 |
@@ -1328,7 +1398,7 @@
 | Network | 40.43 | 37.25 |
 | L1 | 22.64 | 20.85 |
 
-## 824/none/snr.txt
+## Event 824
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1340,6 +1410,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.236948 | 0.151017 | -0.236948 | 0.151017 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.09 | 3.68 |
@@ -1347,7 +1418,7 @@
 | Network | 13.79 | 9.17 |
 | L1 | 7.45 | 4.97 |
 
-## 843/none/snr.txt
+## Event 843
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1359,6 +1430,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.357437 | 0.814876 | -0.357437 | 0.814876 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.32 | 2.16 |
@@ -1366,7 +1438,7 @@
 | Network | 7.92 | 7.61 |
 | L1 | 5.99 | 5.76 |
 
-## 848/none/snr.txt
+## Event 848
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1378,6 +1450,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.480737 | 0.315381 | 0.480737 | 0.315381 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 0.74 | 5.18 |
@@ -1385,7 +1458,7 @@
 | Network | 5.65 | 19.26 |
 | L1 | 3.65 | 12.11 |
 
-## 85/none/snr.txt
+## Event 85
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1397,6 +1470,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.357411 | 0.411936 | 0.357411 | 0.411936 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.49 | 6.09 |
@@ -1404,7 +1478,7 @@
 | Network | 9.58 | 9.00 |
 | L1 | 4.80 | 4.52 |
 
-## 851/none/snr.txt
+## Event 851
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1416,6 +1490,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.522410 | 0.114179 | -0.522410 | 0.114179 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.15 | 4.58 |
@@ -1423,7 +1498,7 @@
 | Network | 14.20 | 16.87 |
 | L1 | 10.57 | 12.64 |
 
-## 876/none/snr.txt
+## Event 876
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1435,6 +1510,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.035750 | 0.171049 | -0.035750 | 0.171049 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.04 | 1.92 |
@@ -1442,7 +1518,7 @@
 | Network | 8.15 | 7.70 |
 | L1 | 5.68 | 5.37 |
 
-## 881/none/snr.txt
+## Event 881
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1454,6 +1530,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.451018 | 0.346289 | -0.451018 | 0.346289 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 8.78 | 8.93 |
@@ -1461,7 +1538,7 @@
 | Network | 12.24 | 12.71 |
 | L1 | 5.83 | 6.09 |
 
-## 896/none/snr.txt
+## Event 896
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1473,6 +1550,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.270968 | 0.358560 | -0.270968 | 0.358560 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 15.21 | 15.88 |
@@ -1480,7 +1558,7 @@
 | Network | 28.60 | 30.22 |
 | L1 | 15.82 | 16.83 |
 
-## 901/none/snr.txt
+## Event 901
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1492,6 +1570,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.555984 | 0.721205 | 0.555984 | 0.721205 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 11.90 | 10.49 |
@@ -1499,7 +1578,7 @@
 | Network | 17.60 | 15.45 |
 | L1 | 9.78 | 8.57 |
 
-## 906/none/snr.txt
+## Event 906
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1511,6 +1590,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.246851 | 0.108791 | -0.246851 | 0.108791 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.95 | 5.20 |
@@ -1518,7 +1598,7 @@
 | Network | 15.16 | 12.52 |
 | L1 | 5.78 | 4.88 |
 
-## 908/none/snr.txt
+## Event 908
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1530,6 +1610,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.014749 | 0.264006 | -0.014749 | 0.264006 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.51 | 5.21 |
@@ -1537,7 +1618,7 @@
 | Network | 12.15 | 11.59 |
 | L1 | 8.14 | 7.78 |
 
-## 916/none/snr.txt
+## Event 916
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1549,6 +1630,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.038645 | 0.202670 | -0.038645 | 0.202670 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 1.24 | 1.14 |
@@ -1556,7 +1638,7 @@
 | Network | 22.54 | 20.70 |
 | L1 | 14.06 | 12.92 |
 
-## 921/none/snr.txt
+## Event 921
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1568,6 +1650,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.103266 | 0.346125 | -0.103266 | 0.346125 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.01 | 2.68 |
@@ -1575,7 +1658,7 @@
 | Network | 13.45 | 12.23 |
 | L1 | 9.36 | 8.55 |
 
-## 935/none/snr.txt
+## Event 935
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1587,6 +1670,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.084668 | 0.327309 | -0.084668 | 0.327309 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 5.66 | 5.26 |
@@ -1594,7 +1678,7 @@
 | Network | 12.13 | 11.19 |
 | L1 | 7.80 | 7.17 |
 
-## 946/none/snr.txt
+## Event 946
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1606,6 +1690,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.202562 | 0.318647 | 0.202562 | 0.318647 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.53 | 2.40 |
@@ -1613,7 +1698,7 @@
 | Network | 8.06 | 7.79 |
 | L1 | 5.88 | 5.70 |
 
-## 953/none/snr.txt
+## Event 953
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1625,6 +1710,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.228919 | 0.502052 | -0.228919 | 0.502052 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 11.30 | 13.11 |
@@ -1632,7 +1718,7 @@
 | Network | 33.85 | 38.36 |
 | L1 | 25.43 | 28.73 |
 
-## 973/none/snr.txt
+## Event 973
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1644,6 +1730,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.214247 | 0.382529 | -0.214247 | 0.382529 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 3.13 | 3.28 |
@@ -1651,7 +1738,7 @@
 | Network | 11.49 | 12.32 |
 | L1 | 8.46 | 9.08 |
 
-## 979/none/snr.txt
+## Event 979
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1663,6 +1750,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.488948 | 0.642585 | 0.488948 | 0.642585 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 4.03 | 3.38 |
@@ -1670,7 +1758,7 @@
 | Network | 15.23 | 13.18 |
 | L1 | 11.12 | 9.62 |
 
-## 98/none/snr.txt
+## Event 98
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1682,6 +1770,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.463325 | 0.568874 | -0.463325 | 0.568874 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 6.20 | 6.57 |
@@ -1689,7 +1778,7 @@
 | Network | 12.44 | 13.26 |
 | L1 | 6.78 | 7.21 |
 
-## 981/none/snr.txt
+## Event 981
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1701,6 +1790,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | -0.257203 | 0.341897 | -0.257203 | 0.341897 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 12.71 | 12.37 |
@@ -1708,7 +1798,7 @@
 | Network | 28.47 | 26.99 |
 | L1 | 18.92 | 17.99 |
 
-## 985/none/snr.txt
+## Event 985
 
  - [] needs attention? (STT4)
  - [] needs attention? (IMR)
@@ -1720,6 +1810,7 @@
 | chi_a (STT4) | chi_p (STT4) | chi_a (IMR) | chi_p (IMR) |
 | --- | --- | --- | --- |
 | 0.181457 | 0.251536 | 0.181457 | 0.251536 |
+
 | config | STT4 | IMR |
 | --- | --- | --- |
 | V1 | 2.21 | 2.39 |
