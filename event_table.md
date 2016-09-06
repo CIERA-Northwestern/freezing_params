@@ -521,7 +521,7 @@
 ## Event 376
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -801,7 +801,7 @@
 ## Event 529
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1041,7 +1041,7 @@
 ## Event 650
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1281,7 +1281,7 @@
 ## Event 775
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
