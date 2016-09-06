@@ -1,5 +1,6 @@
 # 1d anal
 
+import sys
 import math
 import os
 import glob
@@ -93,15 +94,26 @@ spread_factor = 4
 nruns = len(data_skyloc_thetajn_dist)
 print "Collected %d runs, dividing into %d columns" % (nruns, spread_factor)
 
+runs = sorted([t[0] for t in data_skyloc_thetajn_dist.keys()])
+
 #plt.figure(figsize=(8,15))
 i, ncat, nbins = 1, 5, 20
 # Iterate through data and form posteriors
-for (run, combo), samples in data_skyloc_thetajn_dist.iteritems():
+for run in runs:
     ax = plt.subplot(nruns/spread_factor+1, spread_factor, i)
 
     hist = np.zeros((nbins, ncat))
 
-    hist[:,0], b = np.histogram(samples, bins=nbins, range=RANGES[param1], normed=True)
+    try:
+        samples = data_none[(run, "none")]
+        if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
+            print "(%s) Warning some samples are outside the range." % run
+
+        hist[:,0], b = np.histogram(samples, bins=nbins, range=RANGES[param1], normed=True)
+    except KeyError:
+        print >>sys.stderr, "(%s) Couldn't find samples for 'none', skipping event" % run
+        continue
+
     if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
         print "(%s) Warning some samples are outside the range." % run
 
@@ -159,7 +171,7 @@ for (run, combo), samples in data_skyloc_thetajn_dist.iteritems():
         ymin, ymax = j / float(ncat), (j+1) / float(ncat)
 
         if len(np.nonzero(h)) == 0:
-            print "Skipping %s %s, no data" % (run, combo)
+            print "Skipping %s / %d, no data" % (run, j)
             continue
 
         #intrv = conf_intrv(h, b)
@@ -170,7 +182,7 @@ for (run, combo), samples in data_skyloc_thetajn_dist.iteritems():
 
     intrv = conf_intrv2(h, b)
     if len(intrv) != 1:
-        print "Actual confidence interval disjoint for %s, %s" % (run, combo)
+        print "Actual confidence interval disjoint for %s, %d" % (run, j)
 
     if sim_data:
         inj_val = GET_PARAM[param1](sim_data[int(run)])
