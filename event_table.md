@@ -787,7 +787,9 @@ Effective spin not within appropriate range for IMRPhenomPv2
 ## Event 498
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
+
+Could not reach low SNR
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
