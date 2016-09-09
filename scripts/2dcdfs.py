@@ -1,4 +1,4 @@
-# 1d anal
+# 2d anal
 
 import math
 import os
@@ -62,7 +62,7 @@ def extracting_data(textfile, param1, param2, combo, error=False, verbose=False)
         print "-------- " + textfile
         print filter(lambda s: s[0] == param1, split_up_lines(textfile))
     confreg = [float(item[2]) for item in split_up_lines(textfile) \
-             if item[0] == param1]
+        if item[0] == param1]
     if len(confreg) != 1:
         if error:
             raise ValueError("Parameter %s not found in %s" % (param1, textfile))
@@ -72,7 +72,7 @@ def extracting_data(textfile, param1, param2, combo, error=False, verbose=False)
 
 
 def list_areas(combo, param1, param2, bpath):
-	areas = []
+    areas = []
     pathareasorter = {}
     for path in paths_to_files(combo, param1, param2, bpath):
         area = get_area(path)
