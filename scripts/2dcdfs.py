@@ -34,26 +34,26 @@ bpaths = dict([a.split('=') for a in arg.basepath])
 # confidence = arg.confidence
 
 def paths_to_files(combo, param1, param2, bpath):
-        # for a given combination, find all paths to those files.
-        paths = glob.glob('/{3}/*/{0}/post/2Dbins/{1}_{2}_greedy_stats.txt'.format(combo, param1, param2, bpath))
-        return paths
+    # for a given combination, find all paths to those files.
+    paths = glob.glob('/{3}/*/{0}/post/2Dbins/{1}_{2}_greedy_stats.txt'.format(combo, param1, param2, bpath))
+    return paths
 
 
 def get_area(textfile, confidence=90):
-        with open(textfile, 'r') as ppoutput:
-                data = np.genfromtxt(ppoutput)
-                if confidence in [67, 90, 95, 99]:
-                        if confidence == 67:
-                                area = data[0][1]
-                        elif confidence == 90:
-                                area = data[1][1]
-                        elif confidence == 95:
-                                area = data[2][1]
-                        elif confidence == 99:
-                                area = data[3][1]
-                        return area
-                else:
-                        print "can only calculate confidence regions of 67,90,95,99%"
+    with open(textfile, 'r') as ppoutput:
+        data = np.genfromtxt(ppoutput)
+        if confidence in [67, 90, 95, 99]:
+            if confidence == 67:
+                area = data[0][1]
+            elif confidence == 90:
+                area = data[1][1]
+            elif confidence == 95:
+                area = data[2][1]
+            elif confidence == 99:
+                area = data[3][1]
+            return area
+        else:
+            print "can only calculate confidence regions of 67,90,95,99%"
 
 
 #Change this to default to true once we've got consistent parameters
@@ -70,17 +70,19 @@ def extracting_data(textfile, param1, param2, combo, error=False, verbose=False)
             return float("nan")
     return confreg[0]
 
+
 def list_areas(combo, param1, param2, bpath):
 	areas = []
-        pathareasorter = {}
-        for path in paths_to_files(combo, param1, param2, bpath):
-                area = get_area(path)
-                areas.append(area)
-                pathareasorter[path] = area
-        areas = np.sort(areas)
-        #print pathareasorter
-        return areas
-    
+    pathareasorter = {}
+    for path in paths_to_files(combo, param1, param2, bpath):
+        area = get_area(path)
+        areas.append(area)
+        pathareasorter[path] = area
+    areas = np.sort(areas)
+    #print pathareasorter
+    return areas
+
+
 ls_keys = ['-', '-.', '--']
 color_vals = ['b', 'g', 'r', 'c', 'k']
 
@@ -181,10 +183,10 @@ for label, bpath in bpaths.iteritems():
         color_vals.append(color_vals.pop(0))
 
         y_axis = np.linspace(0,len(data_none)/float(len(data_none)),num=len(data_none))
-        
+
 	plt.step(data_none,y_axis,label='none',color=color_vals[0],linestyle=ls_keys[0])
         color_vals.append(color_vals.pop(0))
-	
+
         if param1 == "mc" or param2 == "mc":
             plt.semilogx()
 
@@ -192,18 +194,17 @@ for label, bpath in bpaths.iteritems():
             plt.ylabel('Cumulative Fraction')
         else:
             plt.gca().set_yticklabels([])
-        plt.xlim(0, common.range_from_param(param1) * common.range_from_param(param2))
+        #plt.xlim(0, common.range_from_param(param1) * common.range_from_param(param2))
         plt.ylim(0, 1)
         plt.grid()
         #plt.legend(loc=4,fontsize=10)
 
         # Add normalized axis
-        """
-        if i == 1:
-            ax2 = plt.twiny()
-            ax2.set_xlim(0, 1)
-            plt.xlabel('{0} normalized interval'.format(param))
-        """
+        #if i == 1:
+            #ax2 = plt.twiny()
+            #ax2.set_xlim(0, 1)
+            #plt.xlabel('{0} normalized interval'.format(param))
+
 
         if j == 0:
             plt.xlabel(common.LABELS[param1] + ', ' + common.LABELS[param2]) # FIX ME
