@@ -1,10 +1,22 @@
 ## Blacklisted Events
 * [Event 105](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/105/)
-* asdf
-* Work?
+* [Event 392](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/392/)
+* [Event 498](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/498/)
+* [Event 529](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/529/)
+* [Event 650](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/650/)
+* [Event 775](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/775/)
+
 
 
 ## Potential Blacklist Candidates
+* [Event 124](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/124/)
+* [Event 240](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/240/)
+* [Event 370](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/370/)
+* [Event 378](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/378/)
+* [Event 610](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/610/)
+* [Event 729](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/729/)
+* [Event 953](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/953/)
+* [Event 973](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/973/)
 
 ## Event 102
 
@@ -26,7 +38,7 @@
 | Network | 9.63 | 9.06 |
 | L1 | 5.20 | 5.00 |
 
-## Event 105
+## [Event 105](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/105/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -108,7 +120,7 @@ Issue: Was rerun without the malmquist prior; does not reach the appropriate SNR
 | Network | 18.44 | 17.43 |
 | L1 | 9.12 | 8.42 |
 
-## Event 124
+## [Event 124](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/124/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -290,10 +302,12 @@ Issue: not blacklist; could be resumed
 | Network | 10.07 | 9.55 |
 | L1 | 5.02 | 4.71 |
 
-## Event 240
+## [Event 240](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/240/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
+
+Issue: This was rerun without the malmquist prior
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -330,7 +344,7 @@ Issue: not blacklist; could be resumed
 | Network | 7.12 | 7.36 |
 | L1 | 4.46 | 4.61 |
 
-## Event 244
+## [Event 244](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/244/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -510,7 +524,7 @@ Issue: not blacklist; could be resumed
 | Network | 12.44 | 12.38 |
 | L1 | 9.25 | 9.22 |
 
-## Event 370
+## [Event 370](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/370/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -532,7 +546,7 @@ Issue: unsure if it should be blacklisted; slightly misses SNR (malmquist prior 
 | Network | 9.46 | 7.64 |
 | L1 | 5.25 | 4.22 |
 
-## Event 376
+## [Event 376](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/376/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -552,12 +566,14 @@ Issue: unsure if it should be blacklisted; slightly misses SNR (malmquist prior 
 | Network | 9.85 | 9.36 |
 | L1 | 6.16 | 5.89 |
 
-## Event 378
+## [Event 378](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/378/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
 Issue: The run with no parameters locked only contains 45 posterior samples.
+
+Update: Set to resume
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -574,7 +590,7 @@ Issue: The run with no parameters locked only contains 45 posterior samples.
 | Network | 11.25 | 10.12 |
 | L1 | 8.73 | 7.85 |
 
-## Event 386
+## [Event 386](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/386/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -614,7 +630,7 @@ Issue: The run with no parameters locked only contains 45 posterior samples.
 | Network | 5.52 | 12.73 |
 | L1 | 3.92 | 8.39 |
 
-## Event 392
+## [Event 392](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/392/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -796,7 +812,7 @@ Issue: Effective spin not within appropriate range for IMRPhenomPv2
 | Network | 7.14 | 6.57 |
 | L1 | 5.06 | 4.67 |
 
-## Event 498
+## [Event 498](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/498/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -818,7 +834,7 @@ Issue: Could not reach low SNR
 | Network | 7.90 | 6.70 |
 | L1 | 4.73 | 4.01 |
 
-## Event 529
+## [Event 529](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/529/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -900,7 +916,7 @@ Issue: SNR too low; only 570 posterior samples for the run with no parameters lo
 | Network | 12.56 | 11.91 |
 | L1 | 7.98 | 7.56 |
 
-## Event 566
+## [Event 566](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/566/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -960,7 +976,7 @@ Issue: SNR too low; only 570 posterior samples for the run with no parameters lo
 | Network | 9.29 | 8.63 |
 | L1 | 7.01 | 6.57 |
 
-## Event 610
+## [Event 610](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/610/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -1062,7 +1078,7 @@ Issue: Seems to miss low SNR values slightly (malmquistprior issue); uncertain i
 | Network | 14.68 | 13.99 |
 | L1 | 10.58 | 10.34 |
 
-## Event 650
+## [Event 650](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/650/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -1244,10 +1260,12 @@ Issue: SNR too low; low number of posterior samples
 | Network | 17.42 | 16.23 |
 | L1 | 9.39 | 8.75 |
 
-## Event 729
+## [Event 729](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/729/)
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
+
+Issue: Still running
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1304,7 +1322,7 @@ Issue: SNR too low; low number of posterior samples
 | Network | 13.43 | 12.09 |
 | L1 | 9.41 | 8.44 |
 
-## Event 775
+## [Event 775](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/775/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
@@ -1426,7 +1444,7 @@ Issue: Low SNR; very few posterior samples
 | Network | 40.43 | 37.25 |
 | L1 | 22.64 | 20.85 |
 
-## Event 824
+## [Event 824](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/824/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -1546,7 +1564,7 @@ Issue: Low SNR; very few posterior samples
 | Network | 8.15 | 7.70 |
 | L1 | 5.68 | 5.37 |
 
-## Event 881
+## [Event 881](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/881/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -1566,7 +1584,7 @@ Issue: Low SNR; very few posterior samples
 | Network | 12.24 | 12.71 |
 | L1 | 5.83 | 6.09 |
 
-## Event 896
+## [Event 896](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/896/)
 
  - [ ] needs attention? (STT4)
  - [ ] needs attention? (IMR)
@@ -1726,12 +1744,14 @@ Issue: Low SNR; very few posterior samples
 | Network | 8.06 | 7.79 |
 | L1 | 5.88 | 5.70 |
 
-## Event 953
+## [Event 953](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/953/)
 
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
 Issue: Low number of effective samples; failed to find appropriate M_chirp; could reasonably be left in
+
+Update: Set to resume
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1748,10 +1768,12 @@ Issue: Low number of effective samples; failed to find appropriate M_chirp; coul
 | Network | 33.85 | 38.36 |
 | L1 | 25.43 | 28.73 |
 
-## Event 973
+## [Event 973](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/973/)
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
+
+Issue: Still running
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
