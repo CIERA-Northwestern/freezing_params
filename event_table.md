@@ -1,3 +1,11 @@
+## Blacklisted Events
+* Does
+* This
+* Work?
+
+
+## Potential Blacklist Candidates
+
 ## Event 102
 
  - [ ] needs attention? (STT4)
