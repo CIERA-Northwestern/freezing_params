@@ -103,7 +103,9 @@ Issue: Was rerun without the malmquist prior; does not reach the appropriate SNR
 ## Event 124
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
+
+Issue: not blacklist; could be resumed
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -503,7 +505,9 @@ Issue: Was rerun without the malmquist prior; does not reach the appropriate SNR
 ## Event 370
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
+
+Issue: unsure if it should be blacklisted; slightly misses SNR (malmquist prior issue)
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -951,7 +955,9 @@ Issue: SNR too low; only 570 posterior samples for the run with no parameters lo
 ## Event 610
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
+
+Issue: Seems to miss low SNR values slightly (malmquistprior issue); uncertain if it should be blacklisted or not
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
