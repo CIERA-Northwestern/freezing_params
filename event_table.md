@@ -1,6 +1,6 @@
 ## Blacklisted Events
-* Does
-* This
+* [Event 105](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/105/)
+* asdf
 * Work?
 
 
