@@ -16,7 +16,6 @@
 * [Event 610](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/610/)
 * [Event 729](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/729/)
 * [Event 953](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/953/)
-* [Event 973](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/973/)
 
 ## Event 102
 
@@ -305,7 +304,7 @@ Issue: not blacklist; could be resumed
 ## [Event 240](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/240/)
 
  - [ ] needs attention? (STT4)
- - [ ] needs attention? (IMR)
+ - [X] needs attention? (IMR)
 
 Issue: This was rerun without the malmquist prior
 
@@ -1265,7 +1264,7 @@ Issue: SNR too low; low number of posterior samples
  - [ ] needs attention? (STT4)
  - [X] needs attention? (IMR)
 
-Issue: Still running
+Issue: Very few posterior samples; hit 30 day runtime limit
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
@@ -1771,9 +1770,8 @@ Update: Set to resume
 ## [Event 973](https://ldas-jobs.ligo.caltech.edu/~eve.chase/freezingparams/IMRPhenomPv2/973/)
 
  - [ ] needs attention? (STT4)
- - [X] needs attention? (IMR)
+ - [ ] needs attention? (IMR)
 
-Issue: Still running
 
 | mass1 (STT4) | mass2 (STT4) | mass1 (IMR) | mass2 (IMR) |
 | --- | --- | --- | --- |
