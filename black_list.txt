@@ -16,5 +16,5 @@
 378
 # 'none': thetajn is a little off, but looks okay, "skyloc_thetajn": many noticeable intrinsic biases
 610
-# Badly biased intrinsic parameters
+# Badly biased intrinsic parameters -- though 'none' looks good
 953
