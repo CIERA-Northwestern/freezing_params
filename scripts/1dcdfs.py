@@ -20,7 +20,7 @@ parser.add_argument("-p", '--param1', type=str, action='append', help='first par
 parser.add_argument("-b", '--basepath', type=str, action='append', help='base path to search for results. Must be specified as label=path')
 parser.add_argument("-e", '--errors', type=str, default='bounded', help='Plot these types of error bars. Valid choices are: none, bounded, poisson, binomial. Default is \'bounded\'')
 parser.add_argument("-k", '--ks-table', action='store_true', help='Dump table of KS values for calculated parameter combos.')
-parser.add_argument("-b", '--black-list', help='Do not use information from thist set of events')
+parser.add_argument("-B", '--black-list', help='Do not use information from thist set of events')
 # parser.add_argument('confidence', type=int, nargs='?', default=90, help='confidence region(67,90,95,99)')
 arg = parser.parse_args()
 if arg.errors not in ('none', 'bounded', 'poisson', 'binomial'):

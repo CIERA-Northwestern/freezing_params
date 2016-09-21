@@ -23,6 +23,7 @@ parser.add_argument("-p2", '--param2', type=str, action='append', help='second p
 parser.add_argument("-b", '--basepath', type=str, action='append', help='base path to search for results. Must be specified as label=path')
 parser.add_argument("-e", '--errors', type=str, default='bounded', help='Plot these types of error bars. Valid choices are: none, bounded, poisson, binomial. Default is \'bounded\'')
 parser.add_argument("-k", '--ks-table', action='store_true', help='Dump table of KS values for calculated parameter combos.')
+parser.add_argument("-B", '--black-list', help='Do not use information from thist set of events')
 # parser.add_argument('confidence', type=int, nargs='?', default=90, help='confidence region(67,90,95,99)')
 arg = parser.parse_args()
 if arg.errors not in ('none', 'bounded', 'poisson', 'binomial'):
@@ -71,10 +72,12 @@ def extracting_data(textfile, param1, param2, combo, error=False, verbose=False)
     return confreg[0]
 
 
-def list_areas(combo, param1, param2, bpath):
+def list_areas(combo, param1, param2, bpath, ignore):
     areas = []
     pathareasorter = {}
     for path in paths_to_files(combo, param1, param2, bpath):
+        if common.ignore_path(path, ignore):
+            continue
         area = get_area(path)
         areas.append(area)
         pathareasorter[path] = area
@@ -85,6 +88,11 @@ def list_areas(combo, param1, param2, bpath):
 
 ls_keys = ['-', '-.', '--']
 color_vals = ['b', 'g', 'r', 'c', 'k']
+
+if arg.black_list:
+    black_list = common.read_black_list(arg.black_list)
+else:
+    black_list = set()
 
 if arg.ks_table:
     ks_out = open("ks_values.txt", "w")
