@@ -98,7 +98,7 @@ num_plots = scipy.misc.comb(len(param1_input), 2)
 for label, bpath in bpaths.iteritems():
     print >>ks_out, "## %s\n" % label
     tbl_row = "| param1 | param2 | skyloc | skyloc_dist | skyloc_thetajn | skyloc_thetajn_dist |\n"
-    tbl_row += "| --- | --- | --- | --- | --- |\n"
+    tbl_row += "| --- | --- | --- | --- | --- | --- |\n"
     if len(param1_input) == 1:
 	parameters = [(param1_input[0], param2_input[0])]
     else:
@@ -224,6 +224,6 @@ ks_out.close()
 plt.subplots_adjust(hspace=0, wspace=0)
 
 if len(param1_input) == 1:
-    plt.savefig('{0}_{1}_2Dcdf'.format(param1_input[0], param2_input[0]))
+    plt.savefig('{0}_{1}_2Dcdf'.format(param1_input[0], param2_input[1]))
 else:
     plt.savefig('2Dcdf_all')
