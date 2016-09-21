@@ -63,3 +63,8 @@ LABELS = {
     "ra": r"$\alpha$",
     "dec": r"$\delta$"
 }
+
+def read_black_list(fname):
+    with open(fname, "r") as fin:
+        black_list = np.loadtxt(fname)
+    return set(black_list.astype(np.int32))
