@@ -4,13 +4,14 @@
 529
 # distance is a bit off, want to see 'none', skyloc_thetajn looks *awful*
 370
-# 650 --- Nominally, this isn't affected by Malmquist, however, very low q -- would like to see 'none' set first
+# Nominally, this is modestly affected by Malmquist, however, very low q
+650
 775
 # Spin not in appropriate range
 392
 # Possibly bad (if commented out, then it's okay, but resume to be safe)
 729
-# 124 --- Want to see 'none' for this
+124
 # SNR is nominally fine --- never seems to get anywhere
 378
 # 'none': thetajn is a little off, but looks okay, "skyloc_thetajn": many noticeable intrinsic biases
