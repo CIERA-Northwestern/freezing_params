@@ -82,6 +82,7 @@ def list_areas(combo, param1, param2, bpath):
     #print pathareasorter
     return areas
 
+
 ls_keys = ['-', '-.', '--']
 color_vals = ['b', 'g', 'r', 'c', 'k']
 
@@ -97,14 +98,14 @@ num_plots = scipy.misc.comb(len(param1_input), 2)
 for label, bpath in bpaths.iteritems():
     print >>ks_out, "## %s\n" % label
     tbl_row = "| param1 | param2 | skyloc | skyloc_dist | skyloc_thetajn | skyloc_thetajn_dist |\n"
-    tbl_row += "| --- | --- | --- | --- | --- | --- |\n"
+    tbl_row += "| --- | --- | --- | --- | --- |\n"
     if len(param1_input) == 1:
-        parameters = [(param1_input[0], param2_input[0])]
+	parameters = [(param1_input[0], param2_input[0])]
     else:
     	parameters = [x for x in itertools.combinations(param1_input, 2)]
     for pair in parameters:
-        param1 = pair[0]
-        param2 = pair[1]
+	param1 = pair[0]
+	param2 = pair[1]
         tbl_row += "| %s | %s |" % (param1, param2)
         print "-------- Plotting %s CDFs for params %s and %s" % (label, param1, param2)
         plt.subplot(ntypes, num_plots, i)
@@ -222,7 +223,7 @@ ks_out.close()
 
 plt.subplots_adjust(hspace=0, wspace=0)
 
-if len(param1_input) == 2:
-    plt.savefig('{0}_{1}_2Dcdf'.format(param1_input[0], param1_input[1]))
+if len(param1_input) == 1:
+    plt.savefig('{0}_{1}_2Dcdf'.format(param1_input[0], param2_input[0]))
 else:
     plt.savefig('2Dcdf_all')
