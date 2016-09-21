@@ -122,7 +122,7 @@ for label, bpath in bpaths.iteritems():
                 plt.plot(cpy,y_axis,color='m',alpha=0.3)
         """
 
-        data_skyloc = collect_all_conflevels(param,'skyloc', bpath)
+        data_skyloc = collect_all_conflevels(param,'skyloc', bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc)
         print "KS test between none and skyloc: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
@@ -131,7 +131,7 @@ for label, bpath in bpaths.iteritems():
         plt.step(data_skyloc,y_axis,label='skyloc (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
         color_vals.append(color_vals.pop(0))
 
-        data_skyloc_dist = collect_all_conflevels(param,'skyloc_dist', bpath)
+        data_skyloc_dist = collect_all_conflevels(param,'skyloc_dist', bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_dist)
         print "KS test between none and skyloc_dist: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
@@ -140,7 +140,7 @@ for label, bpath in bpaths.iteritems():
         plt.step(data_skyloc_dist,y_axis,label='skyloc_dist (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
         color_vals.append(color_vals.pop(0))
 
-        data_skyloc_thetajn = collect_all_conflevels(param,'skyloc_thetajn', bpath)
+        data_skyloc_thetajn = collect_all_conflevels(param,'skyloc_thetajn', bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn)
         print "KS test between none and skyloc_thetajn: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
@@ -149,7 +149,7 @@ for label, bpath in bpaths.iteritems():
         plt.step(data_skyloc_thetajn,y_axis,label='skyloc_thetajn (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
         color_vals.append(color_vals.pop(0))
 
-        data_skyloc_thetajn_dist = collect_all_conflevels(param,'skyloc_thetajn_dist', bpath)
+        data_skyloc_thetajn_dist = collect_all_conflevels(param,'skyloc_thetajn_dist', bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn_dist)
         print "KS test between none and skyloc_thetajn_dist: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val

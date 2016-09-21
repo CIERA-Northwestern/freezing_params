@@ -118,7 +118,7 @@ for label, bpath in bpaths.iteritems():
         print "-------- Plotting %s CDFs for params %s and %s" % (label, param1, param2)
         plt.subplot(ntypes, num_plots, i)
 	print param1, param2, bpath
-        data_none = list_areas('none', param1, param2, bpath)
+        data_none = list_areas('none', param1, param2, bpath, black_list)
         y_axis = np.linspace(0,len(data_none)/float(len(data_none)),num=len(data_none))
         #plotting the cdfs
         if arg.errors == "bounded":
@@ -154,7 +154,7 @@ for label, bpath in bpaths.iteritems():
                 plt.plot(cpy,y_axis,color='m',alpha=0.3)
         """
 
-        data_skyloc = list_areas('skyloc', param1, param2, bpath)
+        data_skyloc = list_areas('skyloc', param1, param2, bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc)
         print "KS test between none and skyloc: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
@@ -163,7 +163,7 @@ for label, bpath in bpaths.iteritems():
         plt.step(data_skyloc,y_axis,label='skyloc (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
         color_vals.append(color_vals.pop(0))
 
-        data_skyloc_dist = list_areas('skyloc_dist', param1, param2, bpath)
+        data_skyloc_dist = list_areas('skyloc_dist', param1, param2, bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_dist)
         print "KS test between none and skyloc_dist: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
@@ -172,7 +172,7 @@ for label, bpath in bpaths.iteritems():
         plt.step(data_skyloc_dist,y_axis,label='skyloc_dist (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
         color_vals.append(color_vals.pop(0))
 
-        data_skyloc_thetajn = list_areas('skyloc_thetajn', param1, param2, bpath)
+        data_skyloc_thetajn = list_areas('skyloc_thetajn', param1, param2, bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn)
         print "KS test between none and skyloc_thetajn: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
@@ -181,7 +181,7 @@ for label, bpath in bpaths.iteritems():
         plt.step(data_skyloc_thetajn,y_axis,label='skyloc_thetajn (KS: %1.2e)' % ks_val,linestyle=ls_keys[0],color=color_vals[0])
         color_vals.append(color_vals.pop(0))
 
-        data_skyloc_thetajn_dist = list_areas('skyloc_thetajn_dist', param1, param2, bpath)
+        data_skyloc_thetajn_dist = list_areas('skyloc_thetajn_dist', param1, param2, bpath, black_list)
         stat, ks_val = scipy.stats.ks_2samp(data_none, data_skyloc_thetajn_dist)
         print "KS test between none and skyloc_thetajn_dist: %1.2e" % ks_val
         tbl_row += " %1.2e |" % ks_val
