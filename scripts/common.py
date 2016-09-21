@@ -63,3 +63,22 @@ LABELS = {
     "ra": r"$\alpha$",
     "dec": r"$\delta$"
 }
+
+def read_black_list(fname):
+    """
+    Reads 'fname' (ignoring comment lines) and returns a set of strings corresponding to run labels which should be ignored.
+    """
+    with open(fname, "r") as fin:
+        black_list = np.loadtxt(fname)
+    return set(map(str, black_list.astype(np.int32)))
+
+def ignore_path(path, ignore_list):
+    """
+    Checks whether any item in ignore_list set is present in path. E.g.
+    ignore_path('/path/to/392', set([392])) => True
+    """
+    pth = path.split("/")
+    for ign in ignore_list:
+        if ign in pth:
+            return True
+    return False

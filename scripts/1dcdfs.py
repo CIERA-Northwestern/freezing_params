@@ -20,6 +20,7 @@ parser.add_argument("-p", '--param1', type=str, action='append', help='first par
 parser.add_argument("-b", '--basepath', type=str, action='append', help='base path to search for results. Must be specified as label=path')
 parser.add_argument("-e", '--errors', type=str, default='bounded', help='Plot these types of error bars. Valid choices are: none, bounded, poisson, binomial. Default is \'bounded\'')
 parser.add_argument("-k", '--ks-table', action='store_true', help='Dump table of KS values for calculated parameter combos.')
+parser.add_argument("-b", '--black-list', help='Do not use information from thist set of events')
 # parser.add_argument('confidence', type=int, nargs='?', default=90, help='confidence region(67,90,95,99)')
 arg = parser.parse_args()
 if arg.errors not in ('none', 'bounded', 'poisson', 'binomial'):
@@ -54,9 +55,9 @@ def extracting_data(textfile, param1, combo, error=False, verbose=False):
             return float("nan")
     return confreg[0]
 
-def collect_all_conflevels(param1, combo, bpath):
+def collect_all_conflevels(param1, combo, bpath, ignore):
     paths = paths_to_files(combo, bpath)
-    data = np.asarray([0] + [extracting_data(path, param1, combo) for path in paths])
+    data = np.asarray([0] + [extracting_data(path, param1, combo) for path in paths if not common.ignore_path(path, ignore)])
     data.sort()
     return data
 
@@ -69,6 +70,11 @@ else:
     ks_out = open("/dev/null", "w")
 left_pad = max(map(len, ("param skyloc skyloc_dist skyloc_thetajn skyloc_thetajn_dist".split())))
 
+if arg.black_list:
+    black_list = common.read_black_list(arg.black_list)
+else:
+    black_list = set()
+
 ntypes, j = len(bpaths), 0
 i = 1
 for label, bpath in bpaths.iteritems():
@@ -80,7 +86,7 @@ for label, bpath in bpaths.iteritems():
         print "-------- Plotting %s CDFs for param %s" % (label, param)
         plt.subplot(ntypes, len(param1), i)
 
-        data_none = collect_all_conflevels(param,'none', bpath)
+        data_none = collect_all_conflevels(param,'none', bpath, black_list)
         y_axis = np.linspace(0,len(data_none)/float(len(data_none)),num=len(data_none))
         #plotting the cdfs
         if arg.errors == "bounded":
