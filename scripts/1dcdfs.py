@@ -21,6 +21,7 @@ parser.add_argument("-b", '--basepath', type=str, action='append', help='base pa
 parser.add_argument("-e", '--errors', type=str, default='bounded', help='Plot these types of error bars. Valid choices are: none, bounded, poisson, binomial. Default is \'bounded\'')
 parser.add_argument("-k", '--ks-table', action='store_true', help='Dump table of KS values for calculated parameter combos.')
 parser.add_argument("-B", '--black-list', help='Do not use information from thist set of events')
+parser.add_argument("-a", '--absolute-scale', action='store_true', help='Ensure all parameter ranges cover their full range')
 # parser.add_argument('confidence', type=int, nargs='?', default=90, help='confidence region(67,90,95,99)')
 arg = parser.parse_args()
 if arg.errors not in ('none', 'bounded', 'poisson', 'binomial'):
@@ -169,7 +170,8 @@ for label, bpath in bpaths.iteritems():
             plt.ylabel('Cumulative Fraction')
         else:
             plt.gca().set_yticklabels([])
-        plt.xlim(0, common.range_from_param(param))
+        if arg.absolute_scale:
+            plt.xlim(0, common.range_from_param(param))
         plt.ylim(0, 1)
         plt.grid()
         #plt.legend(loc=4,fontsize=10)
