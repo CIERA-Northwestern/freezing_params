@@ -168,6 +168,9 @@ for label, bpath in bpaths.iteritems():
 
         if i % len(param1) == 1:
             plt.ylabel('Cumulative Fraction')
+            ticks = plt.gca().yaxis.get_major_ticks()
+            if j != 0:
+                ticks[5].label1.set_visible(False)
         else:
             plt.gca().set_yticklabels([])
         if arg.absolute_scale:
@@ -189,6 +192,8 @@ for label, bpath in bpaths.iteritems():
             plt.gca().xaxis.set_label_position('top')
         if j == (ntypes-1):
             plt.xticks(rotation=45)
+            ticks = plt.gca().xaxis.get_major_ticks()
+            ticks[0].label1.set_visible(False)
         else:
             plt.gca().set_xticklabels([])
 
