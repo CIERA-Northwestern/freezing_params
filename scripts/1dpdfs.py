@@ -96,6 +96,8 @@ print "Collected %d runs, dividing into %d columns" % (nruns, spread_factor)
 
 runs = sorted([t[0] for t in data_skyloc_thetajn_dist.keys()])
 
+#calculate dkl
+dkls = []
 #plt.figure(figsize=(8,15))
 i, ncat, nbins = 1, 5, 20
 # Iterate through data and form posteriors
@@ -104,6 +106,7 @@ for run in runs:
 
     hist = np.zeros((nbins, ncat))
 
+    dkl_1run = []
     try:
         samples = data_none[(run, "none")]
         if any((RANGES[param1][0] > samples) | (RANGES[param1][1] < samples)):
@@ -153,6 +156,14 @@ for run in runs:
     except KeyError:
         pass
 
+    dx = b[1] - b[0]
+    for j in range(1,5):
+        ratio = np.nan_to_num(np.log(hist[:,j]/hist[:,0]))
+        dkl_combo = np.sum(ratio*hist[:,j])*dx
+        dkl_1run.append(dkl_combo)
+
+    dkls.append(dkl_1run)
+
     ax.locator_params(axis='x', nbins=3)
     # FIXME: plot disappears?
     xx, yy = np.meshgrid(b, range(6))
@@ -197,3 +208,7 @@ for run in runs:
 plt.tight_layout()
 plt.subplots_adjust(hspace=0)
 plt.savefig("%s_1Dpdf" % param1)
+
+file = open("dkl_output.txt","w")
+file.writelines("%s\n" % item for item in dkls)
+file.close()
